@@ -1,11 +1,8 @@
 import openai
 import streamlit as st
-import os
-from dotenv import load_dotenv
 
-# Load environment variables
-load_dotenv()
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# Set OpenAI API key directly
+openai.api_key = "your_openai_api_key_here"
 
 # Function to generate a budget for the given crop
 def generate_budget(crop_name):
