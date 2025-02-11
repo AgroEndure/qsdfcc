@@ -31,7 +31,7 @@ def fetch_ai_response(input_text):
         model="gpt-3.5-turbo",  
         messages=[{"role": "user", "content": input_text}],
         temperature=0.7,
-        max_tokens=200
+        max_tokens=4000
     )
     return response["choices"][0]["message"]["content"]
 
